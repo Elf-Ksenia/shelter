@@ -1,0 +1,451 @@
+:root {
+  --color-primary: #F1CDB3;
+  --color-primary-light: #FDDCC4;
+  --color-light-xl: #fff;
+  --color-light-l: #F6F6F6;
+  --color-light-s: #FAFAFA;
+  --color-dark-s: #CDCDCD;
+  --color-dark-m: #B2B2B2;
+  --color-dark-l: #545454;
+  --color-dark-xl: #4C4C4C;
+  --color-dark-2xl: #444444;
+  --color-dark-3xl: #292929;
+  --heading-l: 44px;
+  --heading-m: 35px;
+  --heading-s: 20px;
+  --heading-xs: 15px;
+  --paragraph-l: 15px;
+  --paragraph-s: 12px;
+}
+
+/* fonts */
+
+@font-face {
+  font-family: 'Georgia Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Georgia Regular'), url('/assets/fonts/georgia.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Georgia Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Georgia Italic'), url('../assets/fonts/georgia.woff') format('woff');
+    }
+    
+    @font-face {
+    font-family: 'Georgia Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Georgia Bold'), url('../assets/fonts/georgia.woff') format('woff');
+    }
+    
+    @font-face {
+      font-family: 'Arial Regular';
+      font-style: normal;
+      font-weight: normal;
+      src: local('Arial Regular') url('../assets/fonts/ArialMT.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Arial Italic';
+      font-style: normal;
+      font-weight: normal;
+      src: local('Arial Italic') url('../assets/fonts/Arial-ItalicMT.woff') format('woff');
+    }
+
+/* default */
+
+.d-flex {
+  display: flex;
+}
+
+.jcb {
+  justify-content: space-between;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jcsa {
+  justify-content: space-around;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Georgia Regular', serif;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.3;
+}
+
+p {
+  font-family: 'Arial Regular', serif;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.container {
+  padding: 0 40px;
+}
+
+.header {
+  padding: 60px 0;
+}
+
+.footer {
+  padding-bottom: 60px;
+}
+
+.fl-dir-col {
+  flex-direction: column;
+}
+
+.btn-default {
+  padding: 15px 45px;
+  border: 0;
+  border-radius: 100px;
+  color: var(--color-dark-3xl);
+  font-size: 17px;
+  font-family: 'Georgia';
+  white-space: nowrap;
+  cursor: pointer;
+  display: block;
+}
+
+.btn-solid {
+  background-color: var(--color-primary);
+}
+
+.btn-light {
+  background-color: transparent;
+  border: 2px solid var(--color-primary);
+}
+
+.btn-default:hover {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+  cursor: pointer;
+}
+
+/* End default */
+
+.header-title {
+  color: var(--color-primary);
+  font-size: 32px;
+}
+
+.header-subtitle {
+  color: var(--color-light-xl);
+  font-size: var(--paragraph-s);
+  margin-top: 10px;
+  letter-spacing: 0.1em;
+}
+.header-nav-item {
+  font-size: var(--paragraph-l);
+  color: var(--color-dark-s);
+  border-bottom: 3px solid transparent;
+  font-weight: 400;
+  height: 24px;
+}
+
+.header-nav-item:hover, .header-nav-item.active {
+  border-bottom: 3px solid var(--color-primary);
+  color: var(--color-light-s);
+}
+
+.header-nav-item + .header-nav-item {
+  margin-left: 35px;
+}
+
+.main-section {
+  background-image: url(/assets/images/start-screen-gradient-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-content {
+  width: 50%;
+}
+
+.hero-image {
+  width: 50%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-content + .hero-image {
+  margin-left: 40px;
+}
+
+.hero-heading {
+  color: var(--color-light-xl);
+  font-size: var(--heading-l);
+}
+
+.hero-description {
+  color: var(--color-dark-s);
+  font-size: var(--paragraph-l);
+}
+
+.hero-heading + .hero-description, .btn-default {
+  margin-top: 40px;
+}
+
+.hero-content .btn-default {
+  width: fit-content;
+  display: block;
+}
+
+
+.about-section {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.about-content {
+  width: 50%;
+}
+
+.about-image {
+  width: 50%;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+}
+
+.about-image + .about-content {
+  margin-left: 120px;
+}
+
+.about-title {
+  color: var(--color-dark-l);
+  font-size: var(--heading-m);
+}
+
+.about-text {
+  font-size: var(--paragraph-l);
+  color: var(--color-dark-xl);
+  margin-top: 25px;
+}
+
+.pets-section {
+  background-color: var(--color-light-l);
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.pets-title {
+  max-width: 400px;
+  color: var(--color-dark-l);
+  font-size: var(--heading-m);
+  text-align: center;
+  margin: auto;
+}
+
+.pets-title + .pets-slider {
+  margin-top: 60px;
+}
+
+.pets-slider-card {
+  background-color: var(--color-light-s);
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  max-width: 270px;
+  margin: 0 10px;
+}
+
+.pets-slider-card:hover {
+  background-color: var(--color-light-xl);
+  cursor: pointer;
+}
+
+.pets-slider-card:hover>.btn-default{
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+}
+
+.pets-slider-arrow {
+  border: var(--color-primary) solid 2px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pets-slider-arrow:not(.disabled):hover {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+  cursor: pointer;
+}
+
+.pets-slider-arrow.disabled {
+    color: var(--color-dark-s);
+    border-color: var(--color-dark-s);
+}
+
+.pets-card-name {
+  color: var(--color-dark-l);
+  font-size: var(--heading-xs);
+}
+
+.pets-card-img img {
+  width: 100%;
+  height: auto;
+}
+
+.pets-card-img + .pets-card-name, .btn-default {
+  margin-top: 30px;
+}
+
+.pets-slider {
+  margin-bottom: 60px;
+}
+
+.help-section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.help-title {
+  color: var(--color-dark-l);
+  font-size: var(--heading-m);
+  max-width: 308px;
+  margin: auto;
+  text-align: center;
+}
+
+.help-title + .help-options {
+  margin-top: 40px;
+}
+
+.help-item-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.help-item-heading {
+  text-align: center;
+  margin-top: 30px;
+  color: var(--color-dark-l);
+  font-size: var(--heading-s);
+}
+
+.help-options-item {
+ width: 20%;
+ margin: 20px 0;
+}
+
+.donation-section {
+  background-color: var(--color-light-l);
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.donation-img {
+  width: 50%;
+}
+
+.donation-img img {
+  width: 100%;
+  height: auto;
+}
+
+.donation-content{
+  width: 50%;
+}
+.donation-img + .donation-content {
+  margin-left: 30px;
+}
+
+.donation-heading {
+  font-size: var(--heading-m);
+  color: var(--color-dark-l);
+}
+
+.donation-text {
+  font-size: var(--heading-xs);
+  color: var(--color-dark-l);
+  margin-top: 20px;
+}
+
+.donation-requisites {
+  color: var(--color-dark-l);
+  font-size: var(--heading-s);
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: var(--color-primary);
+  border-radius: 9px;
+  width: fit-content;
+}
+
+.donation-requisites span {
+  margin-left: 15px;
+}
+
+.donation-information {
+  color: var(--color-dark-m);
+  font-size: var(--paragraph-s);
+  margin-top: 20px;
+}
+
+.footer {
+  background-image: url(/assets/images/footer-gradient-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 0;
+}
+
+.footer-contacts, .footer-locations {
+  padding-right: 20px;
+}
+
+.footer-contacts-heading, .footer-locations-heading {
+  color: var(--color-light-xl);
+  font-size: var(--heading-m);
+  max-width: 280px;
+  margin-bottom: 40px;
+}
+
+.footer-locations-item, .footer-contacts-item {
+  color: var(--color-primary);
+  font-size: var(--heading-s);
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-locations-item:hover, .footer-contacts-item:hover {
+  color: var(--color-primary-light);
+}
+
+.footer-locations-item img, .footer-contacts-item img {
+ margin-right: 20px;
+}
+
+.footer-img img {
+  width: 100%;
+  height: auto;
+}
